@@ -4,20 +4,20 @@ body {
   background-color: #eee;
 }
 
-.form-signup {
+.form-recipe {
   max-width: 660px;
   padding: 15px;
   margin: 0 auto;
 }
-.form-signup .form-signup-heading,
-.form-signup {
+.form-recipe .form-recipe-heading,
+.form-recipe {
   margin-bottom: 10px;
   text-align: center;
 }
-.form-signup .checkbox {
+.form-recipe .checkbox {
   font-weight: normal;
 }
-.form-signup .form-control {
+.form-recipe .form-control {
   position: relative;
   height: auto;
   -webkit-box-sizing: border-box;
@@ -25,24 +25,22 @@ body {
   padding: 10px;
   font-size: 16px;
 }
-.form-signup .form-control:focus {
+.form-recipe .form-control:focus {
   z-index: 2;
 }
-.form-signup input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.form-signup input[type="password"] {
+
+.form-recipe input[type="text"] {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   margin-top: 10px;
 }
-.form-signup input[type="text"] {
+
+.form-recipe textarea[type="text"] {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   margin-top: 10px;
 }
+
 .checkbox {
   text-align: center;
 }
@@ -52,4 +50,12 @@ body {
 
 #author {
   text-align: center;
+}
+
+.row {
+  text-align: left;
+}
+
+.label {
+  text-align: left; 
 }

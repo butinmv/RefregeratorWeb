@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Главная</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/addrecipe.css">
+</head>
+<body>
+
+	<div class="container">
+		<form class="form-recipe">
+			<h2 class="form-recipe-heading">Добавить новый рецепт</h2>
+			<label for="inputNameRecipe" class="sr-only">Введите название блюда</label>
+			<input type="text" id="inputNameRecipe" class="form-control" placeholder="Имя" required autofocus>
+			<label for="inputDescription" class="sr-only">Введите описание</label>
+			<textarea type="text" id="inputDescription" class="form-control" placeholder="Описание блюда" required rows="10"></textarea>
+			<div class="form-group">			
+				<label for="time">Выбирите примерное время приготовления</label>
+    			<select class="form-control" id="time">
+	      			<option>15</option>
+	      			<option>20</option>
+	      			<option>40</option>
+	      			<option>60</option>
+    			</select>
+    		</div>
+    		<div class="form-group">			
+				<label for="type">Выбирите тип блюда</label>
+    			<select class="form-control" id="type">
+	      			<option>Завтрак</option>
+	      			<option>Обед</option>
+	      			<option>Полдник</option>
+	      			<option>Ужин</option>
+    			</select>
+    		</div>
+
+    		<label>Выберите продукты, которые учавствуют в приготовлении</label>
+			<div class="form-group row">
+			<div class="col-md-3 col-sm-3">
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input"> Хлеб
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input"> Помидоры
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input"> Огурец
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input"> Крабовые палочки
+					</label>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-3">
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input"> Молоко
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input"> Кукуруза
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input"> Мясо
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input"> Горошек
+					</label>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-3">
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input"> Колбаса
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input"> Майонез
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input"> Картошка
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input"> Лук
+					</label>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-3">
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input"> Яйца
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input"> Масло
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input"> Гречка
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input"> Рис
+					</label>
+				</div>
+			</div>
+			
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Добавить</button>
+		</form>
+	</div> <!-- /container -->
+
+
+	<p id="author">Бутин Максим, Группа ПИ-52</p>
+
+		
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
