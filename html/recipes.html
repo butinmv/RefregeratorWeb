@@ -18,10 +18,10 @@
 
   		<div class="collapse navbar-collapse" id="navbarSupportedContent">
   			<ul class="navbar-nav mr-auto">
-      			<li class="nav-item active">
+      			<li class="nav-item">
         			<a class="nav-link" href="../html/index.html">Главная<span class="sr-only">(current)</span></a>
       			</li>
-      			<li class="nav-item">
+      			<li class="nav-item active">
         			<a class="nav-link" href="../html/recipes.html">Рецепты</a>
       			</li>
     		</ul>
@@ -53,143 +53,14 @@
 	<div class="container">
 
 		<div class="content">
-			<div class="jumbotron jumbotron-fluid mt-5 mb-5">
-		  		<div class="container">
-		    		<h1 class="display-3">Есть поесть?</h1>
-		    		<p class="lead">1. Выбери тип блюда.<br>
-		    			2. Выбери время на приготовление.<br>
-		    			3. Выбери ингридиенты, которые есть у тебя в холодильнике.</p>
-		  		</div>
-			</div>
-			
-			<div class="form-group row">
-				<div class="col-md-6 col-sm-1">
-					<div class="form-group">
-		    			<label for="type">Выберите тип блюда</label>
-		    			<select class="form-control" id="type">
-		      				<option>Завтрак</option>
-						    <option>Обед</option>
-						    <option>Полдник</option>
-						    <option>Ужин</option>
-						</select>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-1">
-					<div class="form-group">
-	    				<label for="time">Выберите время приготовления</label>
-	    				<select class="form-control" id="time">
-	    					<option>15 мин</option>
-	    					<option>20 мин</option>
-	    					<option>40 мин</option>
-	    					<option>60 мин</option>
-						</select>
-					</div>
-				</div>
-			</div>
-
-			<label>Выберите продукты, которые есть у вас в холодильнике</label>
-			<div class="form-group row">
-			<div class="col-md-3 col-sm-3">
-				<div class="form-check">
-					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input"> Хлеб
-					</label>
-				</div>
-				<div class="form-check">
-					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input"> Помидоры
-					</label>
-				</div>
-				<div class="form-check">
-					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input"> Огурец
-					</label>
-				</div>
-				<div class="form-check">
-					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input"> Крабовые палочки
-					</label>
-				</div>
-			</div>
-
-			<div class="col-md-3 col-sm-3">
-				<div class="form-check">
-					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input"> Молоко
-					</label>
-				</div>
-				<div class="form-check">
-					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input"> Кукуруза
-					</label>
-				</div>
-				<div class="form-check">
-					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input"> Мясо
-					</label>
-				</div>
-				<div class="form-check">
-					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input"> Горошек
-					</label>
-				</div>
-			</div>
-
-			<div class="col-md-3 col-sm-3">
-				<div class="form-check">
-					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input"> Колбаса
-					</label>
-				</div>
-				<div class="form-check">
-					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input"> Майонез
-					</label>
-				</div>
-				<div class="form-check">
-					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input"> Картошка
-					</label>
-				</div>
-				<div class="form-check">
-					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input"> Лук
-					</label>
-				</div>
-			</div>
-
-			<div class="col-md-3 col-sm-3">
-				<div class="form-check">
-					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input"> Яйца
-					</label>
-				</div>
-				<div class="form-check">
-					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input"> Масло
-					</label>
-				</div>
-				<div class="form-check">
-					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input"> Гречка
-					</label>
-				</div>
-				<div class="form-check">
-					<label class="form-check-label">
-						<input type="checkbox" class="form-check-input"> Рис
-					</label>
-				</div>
-			</div>
-
-			<button class="btn btn-success" type="submit" id="resultButton">Получить рецепты</button>
-			</div>
 
 			<div class="card">
 	  			<div class="card-header bg-success" id="card-header">
 	  				Завтрак		
 	  			</div>
 	  			<div class="card-block">
-	    			<h4 class="card-title">Омлет</h4>
+	    			<h4 class="card-title" id="name">Омлет</h4>
+	    			<h5 lass="card-title" id="time">15 минут</h5>
 	    			<p class="card-text">Быстро, вкусно, полезно</p>
 
 	    			<!-- Button trigger modal -->
@@ -231,7 +102,8 @@
 	  				Обед	
 	  			</div>
 	  			<div class="card-block">
-	    			<h4 class="card-title">Катошка по-французски</h4>
+	  				<h4 class="card-title" id="name">Катошка по-французски</h4>
+	    			<h5 lass="card-title" id="time">40 минут</h5>
 	    			<p class="card-text">Питательный обед</p>
 
 	    			<!-- Button trigger modal -->
@@ -273,7 +145,8 @@
 	  				Полдник
 	  			</div>
 	  			<div class="card-block">
-	    			<h4 class="card-title">Молоко с Хлебом</h4>
+	    			<h4 class="card-title" id="name">Молоко с Хлебом</h4>
+	    			<h5 lass="card-title" id="time">15 минут</h5>
 	    			<p class="card-text">Если совсем уж ничего не осталось</p>
 
 	    			<!-- Button trigger modal -->
@@ -315,8 +188,8 @@
 	  				Ужин	
 	  			</div>
 	  			<div class="card-block">
-	    			<h4 class="card-title">Гречка с котлетами</h4>
-	    			<p class="card-text">Полноценный ужин</p>
+	  				<h4 class="card-title" id="name">Гречка с котлетами</h4>
+	    			<h5 lass="card-title" id="time">40 минут</h5>
 
 	    			<!-- Button trigger modal -->
 	    			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#recipe">
