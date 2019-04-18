@@ -1,4 +1,4 @@
-# Refregerator
+# Refrigerator
 
 Лабораторнаые работы по вебу
 
